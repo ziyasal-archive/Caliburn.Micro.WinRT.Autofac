@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Caliburn.Micro.WinRT.Autofac</id>
+    <version>0.1.0</version>
+    <authors>ziyasal</authors>
+    <owners>ziyasal</owners>
+    <projectUrl>https://github.com/ziyasal/Caliburn.Metro</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Caliburn.Micro and Autofac integrated application bootstrapper for Windows Store applications</description>
+    <summary>Caliburn.Micro and Autofac integrated application bootstrapper for Windows Store applications</summary>
+    <tags>WindowsRT Caliburn.Micro Mvvm MetroUI WinRT Autofac</tags>
+    <dependencies>
+      <dependency id="Autofac" version="3.0.1" />
+      <dependency id="Caliburn.Micro" version="[1.4.0]" />
+      <dependency id="Windows.UI.Interactivity" version="1.0.2.0"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\Caliburn.Micro.WinRT.Autofac.dll" target="lib\win\Caliburn.Micro.WinRT.Autofac.dll" />
+  </files>
+</package>
