@@ -161,15 +161,12 @@
     <Reference Include="Caliburn.Micro.Extensions">
       <HintPath>..\packages\Caliburn.Micro.1.4\lib\win8\Caliburn.Micro.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Caliburn.Micro.WinRT.Autofac">
+      <HintPath>..\packages\Caliburn.Micro.WinRT.Autofac.0.1.0\lib\netcore45\Caliburn.Micro.WinRT.Autofac.dll</HintPath>
+    </Reference>
     <Reference Include="Windows.UI.Interactivity">
       <HintPath>..\packages\Windows.UI.Interactivity.1.0.2.0\lib\winrt45\Windows.UI.Interactivity.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Caliburn.Micro.WinRT.Autofac\Caliburn.Micro.WinRT.Autofac.csproj">
-      <Project>{CFABB619-0FB2-4F78-879F-B9BC3FBD36AD}</Project>
-      <Name>Caliburn.Micro.WinRT.Autofac</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>

@@ -119,8 +119,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Caliburn.Micro.WinRT.Autofac.nuspec" />
-    <None Include="packages.config" />
+    <None Include="Caliburn.Micro.WinRT.Autofac.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>
