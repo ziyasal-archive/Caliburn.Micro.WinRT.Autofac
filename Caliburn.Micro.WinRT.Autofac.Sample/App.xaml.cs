@@ -10,8 +10,8 @@ namespace Caliburn.Micro.WinRT.Autofac.Sample
         {
             InitializeComponent();
         }
-
-        public override void HandleOnLaunched()
+        
+        protected override void OnLaunched(LaunchActivatedEventArgs args)
         {
             DisplayRootView<MainPage>();
         }
