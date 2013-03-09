@@ -56,12 +56,6 @@ namespace Caliburn.Micro.WinRT.Autofac
             _builder.RegisterInstance(new FrameAdapter(rootFrame)).As<INavigationService>().SingleInstance();
         }
 
-        protected override void OnLaunched(LaunchActivatedEventArgs args)
-        {
-            HandleOnLaunched();
-        }
-
-        public abstract void HandleOnLaunched();
         public virtual void HandleConfigure(ContainerBuilder builder)
         {
             /*Register all types by default*/
