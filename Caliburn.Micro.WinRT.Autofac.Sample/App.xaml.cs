@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using Autofac;
 using Caliburn.Micro.WinRT.Autofac.Sample.Views;
+using Windows.ApplicationModel.Activation;
 
 namespace Caliburn.Micro.WinRT.Autofac.Sample
 {
