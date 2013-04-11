@@ -7,10 +7,12 @@ namespace Caliburn.Micro.WinRT.Autofac.Sample.ViewModels
     public class MainPageViewModel : Screen, IHandle<ClearListEvent>
     {
         private readonly IEventAggregator _messenger;
+        private readonly INavigationService _navigationService;
 
-        public MainPageViewModel(IEventAggregator messenger, RightMenuViewModel rightMenuViewModel)
+        public MainPageViewModel(IEventAggregator messenger, RightMenuViewModel rightMenuViewModel, INavigationService navigationService)
         {
             _messenger = messenger;
+            _navigationService = navigationService;
             RightMenu = rightMenuViewModel;
             People = new ObservableCollection<Person>();
             _messenger.Subscribe(this);

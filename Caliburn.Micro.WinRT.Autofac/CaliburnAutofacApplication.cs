@@ -10,6 +10,7 @@ namespace Caliburn.Micro.WinRT.Autofac
     {
         protected IContainer Container;
         private readonly ContainerBuilder _builder;
+        private FrameAdapter _rootFrame;
 
         protected CaliburnAutofacApplication()
         {
@@ -19,6 +20,7 @@ namespace Caliburn.Micro.WinRT.Autofac
         protected override void Configure()
         {
             _builder.RegisterType<EventAggregator>().As<IEventAggregator>().SingleInstance();
+            _builder.Register(x => _rootFrame).As<INavigationService>().SingleInstance();
             HandleConfigure(_builder);
             Container = _builder.Build();
         }
@@ -53,7 +55,7 @@ namespace Caliburn.Micro.WinRT.Autofac
 
         protected override void PrepareViewFirst(Windows.UI.Xaml.Controls.Frame rootFrame)
         {
-            _builder.RegisterInstance(new FrameAdapter(rootFrame)).As<INavigationService>().SingleInstance();
+            _rootFrame = new FrameAdapter(rootFrame);
         }
 
         public virtual void HandleConfigure(ContainerBuilder builder)
